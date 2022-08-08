@@ -1,0 +1,8 @@
+.poster-project-info {
+  opacity: 0.66;
+}
+
+.poster-project-info:hover {
+  opacity: 1;
+  cursor: pointer;
+}

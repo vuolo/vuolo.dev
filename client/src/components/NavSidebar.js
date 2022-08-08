@@ -6,6 +6,7 @@ const NavLink = styled(Link)(({ selected }) => ({
   textDecoration: "none",
   textTransform: "uppercase",
   fontWeight: 700,
+  fontSize: "calc(100vw / 80)", // 80 is a guessed value, normally we'd use 18px
   color: "black",
   opacity: selected ? 0.33 : 1,
   "&:hover": {
@@ -17,8 +18,8 @@ const NavSidebar = () => {
   const [curPage, setCurPage] = useState("Home");
 
   return (
-    <Container sx={{ marginTop: 6 }}>
-      <Stack spacing={2}>
+    <Container sx={{ marginTop: 4 }} style={{ maxWidth: 165 }}>
+      <Stack spacing={1}>
         <NavLink selected={curPage == "Home"} href="/">
           Home
         </NavLink>
