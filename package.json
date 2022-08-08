@@ -1,0 +1,32 @@
+{
+  "name": "vuolo.dev",
+  "version": "1.0.0",
+  "description": "Portfolio website built using the MERN stack.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "install-dependencies": "npm install && cd client && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuolo/vuolo.dev.git"
+  },
+  "author": "Michael Vuolo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vuolo/vuolo.dev/issues"
+  },
+  "homepage": "https://github.com/vuolo/vuolo.dev#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.1",
+    "nodemon": "^2.0.19",
+    "socket.io": "^4.5.1"
+  }
+}
