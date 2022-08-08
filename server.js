@@ -27,9 +27,9 @@ mongoose.connect(
   }
 );
 
-const SERVER_PORT = process.env.SERVER_PORT || 4000;
-httpServer.listen(SERVER_PORT, () => {
-  console.log(`✓ Listening (:${SERVER_PORT})`);
+const PORT = process.env.PORT || 4000;
+httpServer.listen(PORT, () => {
+  console.log(`✓ Listening (:${PORT})`);
 });
 
 app.use(express.json());
