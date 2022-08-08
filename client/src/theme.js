@@ -21,6 +21,12 @@ const theme = createTheme({
       },
     },
   },
+  typography: {
+    allVariants: {
+      fontFamily: "'aktiv-grotesk', 'Helvetica Neue', 'Helvetica', sans-serif",
+      textTransform: "none",
+    },
+  },
 });
 
 export default theme;

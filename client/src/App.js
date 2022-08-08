@@ -6,6 +6,7 @@ import "react-icons/bs";
 import "react-router-dom";
 import { CssBaseline } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
+import { useAdobeFonts } from "react-adobe-fonts";
 
 import {
   BrowserRouter,
@@ -19,6 +20,9 @@ import theme from "./theme";
 import HomeView from "./components/views/HomeView";
 
 function App() {
+  // Load 'aktiv-grotesk' Typekit
+  useAdobeFonts({ kitId: "ezp7qhd" });
+
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
