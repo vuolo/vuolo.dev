@@ -9,6 +9,7 @@
   
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
+    border-radius: 2px;
     background: #000000;
   }
   
@@ -32,6 +33,7 @@
   
   /* Color/shape of close button cross */
   .bm-cross {
+    border-radius: 2px;
     background: #000000;
     top: -8px;
     right: -5px;
