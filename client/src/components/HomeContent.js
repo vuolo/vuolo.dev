@@ -31,7 +31,12 @@ export default function HomeContent() {
         <img
           src={logoImage}
           alt="MV"
-          style={{ width: 55, marginLeft: 32, marginTop: 32 }}
+          style={{
+            position: "fixed",
+            width: 55,
+            top: 32,
+            left: 32,
+          }}
         />
       </Breakpoint>
 

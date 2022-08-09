@@ -12,9 +12,6 @@ const NavLink = styled(Link)(({ selected }) => ({
   fontSize: 36,
   color: "black",
   opacity: selected ? 0.33 : 1,
-  "&:hover": {
-    opacity: selected ? 0.165 : 0.33,
-  },
 }));
 
 export default function BurgerMenu(props) {

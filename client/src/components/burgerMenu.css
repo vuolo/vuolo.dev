@@ -19,8 +19,11 @@
   
   /* Position and sizing of clickable cross button */
   .bm-cross-button {
-    height: 24px;
-    width: 24px;
+    transform: scale(2);
+    margin-top: 25px;
+    margin-right: 25px;
+    height: 45px;
+    width: 45px;
   }
 
   /* Color/shape of clickable cross button on hover*/
