@@ -1,8 +1,63 @@
-import { Box, Card, Stack } from "@mui/material";
+import { Link, Container, Stack, Typography } from "@mui/material";
+import { styled } from "@mui/system";
 import React, { useState } from "react";
 
-const InfoSidebar = () => {
-  return <Stack spacing={2}>{/* <Card></Card> */}</Stack>;
-};
+import { FaGithub, FaLinkedin, FaCodepen } from "react-icons/fa";
+import { SiUpwork } from "react-icons/si";
 
-export default InfoSidebar;
+const SocialLink = styled(Link)({
+  fontSize: 18,
+  color: "black",
+  opacity: 0.33,
+  "&:hover": {
+    opacity: 1,
+  },
+});
+
+export default function InfoSidebar() {
+  return (
+    <Container style={{ display: "flex" }}>
+      <Stack spacing={2} sx={{ margin: 4 }} style={{ maxWidth: 0 }}>
+        <Typography
+          style={{
+            fontWeight: 700,
+            fontSize: 64,
+            transform: "rotate(-90deg)",
+            width: 550,
+            marginLeft: -250,
+            marginTop: 115,
+          }}
+        >
+          Michael Vuolo
+        </Typography>
+
+        <Stack
+          spacing={1}
+          style={{
+            position: "absolute",
+            marginTop: "75vh",
+          }}
+        >
+          <SocialLink href="https://github.com/vuolo" target="_blank">
+            <FaGithub />
+          </SocialLink>
+          <SocialLink
+            href="https://www.linkedin.com/in/michael-vuolo/"
+            target="_blank"
+          >
+            <FaLinkedin />
+          </SocialLink>
+          <SocialLink
+            href="https://www.upwork.com/freelancers/~01e61e1da7ef424990"
+            target="_blank"
+          >
+            <SiUpwork />
+          </SocialLink>
+          <SocialLink href="https://codepen.io/vuolo" target="_blank">
+            <FaCodepen />
+          </SocialLink>
+        </Stack>
+      </Stack>
+    </Container>
+  );
+}

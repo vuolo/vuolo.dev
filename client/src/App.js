@@ -1,9 +1,3 @@
-import "@mui/material";
-import "react-icons";
-import "react-icons/bi";
-import "react-icons/md";
-import "react-icons/bs";
-import "react-router-dom";
 import { CssBaseline } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { useAdobeFonts } from "react-adobe-fonts";
@@ -19,7 +13,7 @@ import theme from "./theme";
 
 import HomeView from "./components/views/HomeView";
 
-function App() {
+export default function App() {
   // Load 'aktiv-grotesk' Typekit
   useAdobeFonts({ kitId: "ezp7qhd" });
 
@@ -34,5 +28,3 @@ function App() {
     </ThemeProvider>
   );
 }
-
-export default App;

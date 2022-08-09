@@ -6,7 +6,7 @@ import InfoSidebar from "../InfoSidebar";
 import NavSidebar from "../NavSidebar";
 import HomeContent from "../HomeContent";
 
-const HomeView = () => {
+export default function HomeView() {
   return (
     <Container disableGutters maxWidth={false}>
       <GridLayout
@@ -16,6 +16,4 @@ const HomeView = () => {
       />
     </Container>
   );
-};
-
-export default HomeView;
+}
