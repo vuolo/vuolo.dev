@@ -8,7 +8,13 @@ import HomeContent from "../HomeContent";
 
 export default function HomeView() {
   return (
-    <Container disableGutters maxWidth={false}>
+    <Container
+      disableGutters
+      maxWidth={false}
+      style={{
+        backgroundColor: "white",
+      }}
+    >
       <GridLayout
         left={<InfoSidebar />}
         center={<HomeContent />}

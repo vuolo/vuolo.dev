@@ -1,6 +1,7 @@
 import { CssBaseline } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { useAdobeFonts } from "react-adobe-fonts";
+import { BreakpointProvider } from "react-socks";
 
 import {
   BrowserRouter,
@@ -18,13 +19,15 @@ export default function App() {
   useAdobeFonts({ kitId: "ezp7qhd" });
 
   return (
-    <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <CssBaseline />
-        <Routes>
-          <Route path="/" element={<HomeView />} />
-        </Routes>
-      </BrowserRouter>
-    </ThemeProvider>
+    <BreakpointProvider>
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <CssBaseline />
+          <Routes>
+            <Route path="/" element={<HomeView />} />
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
+    </BreakpointProvider>
   );
 }

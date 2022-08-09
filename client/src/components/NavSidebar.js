@@ -18,9 +18,16 @@ export default function NavSidebar() {
   const [curPage, setCurPage] = useState("Home");
 
   return (
-    <Container>
+    <Container
+      style={{
+        padding: 0,
+        display: "flex",
+        alignContent: "center",
+        justifyContent: "center",
+      }}
+    >
       <Stack spacing={1} sx={{ marginTop: 4 }} style={{ maxWidth: 165 }}>
-        <NavLink selected={curPage == "Home"} href="/">
+        <NavLink href="/" selected={curPage == "Home"}>
           Home
         </NavLink>
         <NavLink selected={curPage == "Work"} href="/work">

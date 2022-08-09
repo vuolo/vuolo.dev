@@ -20,8 +20,6 @@ export default function PosterCard() {
           "linear-gradient(90deg, #949A9E 0%, #949A9E 49%, #EAECEB 100%)",
         padding: 2,
         paddingLeft: 8,
-        overflow: "hidden",
-        width: "95%",
       }}
     >
       <Grid item xs={5} style={{ marginTop: 140 }}>

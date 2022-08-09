@@ -16,7 +16,13 @@ const SocialLink = styled(Link)({
 
 export default function InfoSidebar() {
   return (
-    <Container style={{ display: "flex" }}>
+    <Container
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignContent: "center",
+      }}
+    >
       <Stack spacing={2} sx={{ margin: 4 }} style={{ maxWidth: 0 }}>
         <Typography
           style={{
@@ -24,7 +30,7 @@ export default function InfoSidebar() {
             fontSize: 64,
             transform: "rotate(-90deg)",
             width: 550,
-            marginLeft: -250,
+            marginLeft: -280,
             marginTop: 115,
           }}
         >
@@ -36,6 +42,7 @@ export default function InfoSidebar() {
           style={{
             position: "absolute",
             marginTop: "75vh",
+            marginLeft: -15,
           }}
         >
           <SocialLink href="https://github.com/vuolo" target="_blank">
