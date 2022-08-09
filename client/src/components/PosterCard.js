@@ -78,7 +78,7 @@ export default function PosterCard() {
                 }}
               />
             </Grid>
-            <Grid item xs={3} class="poster-project-info">
+            <Grid item xs={3} className="poster-project-info">
               <Typography
                 style={{
                   color: "white",
