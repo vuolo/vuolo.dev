@@ -43,15 +43,6 @@ export default function HomeContent() {
       <Breakpoint large up>
         <PosterCard />
       </Breakpoint>
-      <Breakpoint large up>
-        <PosterCard />
-      </Breakpoint>
-      <Breakpoint large up>
-        <PosterCard />
-      </Breakpoint>
-      <Breakpoint large up>
-        <PosterCard />
-      </Breakpoint>
     </Stack>
   );
 }
